@@ -1,53 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anubhav Git Commands</title>
-    <link rel="stylesheet" href="style.css">
-  
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+        content="width=device-width,   initial-scale=1.0" />
+    <title>Anubhav QR Code Generator</title>
+   <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 </head>
+
 <body>
-    <div class="container">
-        <h1>Anubhav Git Commands</h1>
-        <div class="command">
-            <p>1. git init</p>
-            <button class="copy-button" onclick="copyToClipboard('git init')">Copy</button>
-        </div>
-        <div class="command">
-            <p>2. git remote add upstream</p>
-            <button class="copy-button" onclick="copyToClipboard('git remote add upstream')">Copy</button>
-        </div>
-
-        <div class="command">
-            <p>3. git pull upstream main</p>
-            <button class="copy-button" onclick="copyToClipboard('git pull upstream main')">Copy</button>
-        </div>
-        <div class="command">
-            <p>4. git add .</p>
-            <button class="copy-button" onclick="copyToClipboard('git add .')">Copy</button>
-        </div>
-        <div class="command">
-            <p>5. git status</p>
-            <button class="copy-button" onclick="copyToClipboard('git status')">Copy</button>
-        </div>
-        <div class="command">
-            <p>6. git commit -m 'comment here'</p>
-            <button class="copy-button" onclick="copyToClipboard('git commit -m \'comment here\'')">Copy</button>
-        </div>
-        <div class="command">
-            <p>7. git remote add origin</p>
-            <button class="copy-button" onclick="copyToClipboard('git remote add origin')">Copy</button>
-        </div>
-        <div class="command">
-            <p>8. git push -u origin master</p>
-            <button class="copy-button" onclick="copyToClipboard('git push -u origin master')">Copy</button>
-        </div>
-        <!-- Add more commands here -->
-        <div class="copy-success" id="copySuccess">Copied!</div>
-    </div>
-
-    <script src="script.js"></script>
-
+    <header>
+        <h1>Anubhav QR Code Generator</h1>
+        <h3>Anubhav Create QR codes easily</h3>
+    </header>
+    <main>
+        <form id="qr-generation-form">
+            <input type="text" name="qr-code-content" id="qr-content" value=""
+                placeholder="Enter QR content" autocomplete="off" />
+            <input type="submit" value="Generate QR Code" />
+        </form>
+        <div id="qr-code"></div>
+        <a id="download-link" download="Anubhav_qrcode.png">
+            <button>Download QR Code</button>
+        </a>
+    </main>
+  <script src="script.js"></script>
 </body>
+
 </html>
