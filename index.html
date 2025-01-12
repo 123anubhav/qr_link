@@ -2,32 +2,157 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport"
-        content="width=device-width,   initial-scale=1.0" />
-    <title>Anubhav QR Code Generator</title>
-   <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Premium QR Code Generator | Create Beautiful QR Codes Instantly</title>
+    <meta name="title" content="Premium QR Code Generator | Create Beautiful QR Codes Instantly">
+    <meta name="description" content="Generate beautiful, customizable QR codes instantly for free. Create QR codes for URLs, text, and more with our premium QR code generator tool.">
+    <meta name="author" content="Anubhav">
+    <meta name="keywords" content="QR code generator, free QR code, QR code maker, URL to QR code, custom QR codes, QR code creator">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://123anubhav.github.io/qr_link/">
+    
+    <!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://123anubhav.github.io/qr_link/">
+<meta property="og:title" content="Premium QR Code Generator | Create Beautiful QR Codes Instantly">
+<meta property="og:description" content="Generate beautiful, customizable QR codes instantly for free. Create QR codes for URLs, text, and more with our premium QR code generator tool.">
+<meta property="og:image" content="https://123anubhav.github.io/qr_link/qr.jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://123anubhav.github.io/qr_link/">
+<meta property="twitter:title" content="Premium QR Code Generator | Create Beautiful QR Codes Instantly">
+<meta property="twitter:description" content="Generate beautiful, customizable QR codes instantly for free. Create QR codes for URLs, text, and more with our premium QR code generator tool.">
+<meta property="twitter:image" content="https://123anubhav.github.io/qr_link/qr.jpeg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="https://123anubhav.github.io/qr_link/qr.jpeg">
+
+    <!-- Additional Image Meta Tags -->
+<meta name="image" content="https://123anubhav.github.io/qr_link/qr.jpeg">
+<link rel="image_src" href="https://123anubhav.github.io/qr_link/qr.jpeg">
+    
+    <!-- Existing CSS and Script links -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Premium QR Code Generator",
+        "description": "Generate beautiful, customizable QR codes instantly for free. Create QR codes for URLs, text, and more with our premium QR code generator tool.",
+        "url": "https://123anubhav.github.io/qr_link/",
+        "author": {
+            "@type": "Person",
+            "name": "Anubhav",
+            "url": "https://anubhav-webpage.netlify.app/"
+        },
+        "applicationCategory": "UtilityApplication",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
 </head>
 
 <body>
-    <header>
-        <h1>Anubhav QR Code Generator</h1>
-        <h3>Anubhav Create QR codes easily</h3>
-    </header>
-    <main>
-        <form id="qr-generation-form">
-            <input type="text" name="qr-code-content" id="qr-content" value=""
-                placeholder="Enter QR content" autocomplete="off" />
-            <input type="submit" value="Generate QR Code" />
-        </form>
-        <div id="qr-code"></div>
-        <a id="download-link" download="Anubhav_qrcode.png">
-            <button>Download QR Code</button>
+    <!-- Animated Background -->
+    <div class="area">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <div class="main-container">
+        <!-- Header Section -->
+        <div class="header">
+            <div class="logo-container">
+                <div class="logo-animation">
+                    <i class="fas fa-qrcode"></i>
+                </div>
+            </div>
+            <h1>QR Code Generator</h1>
+            <p class="tagline">Create Beautiful QR Codes Instantly</p>
+        </div>
+
+        <!-- QR Code Section -->
+        <div class="qr-section">
+            <div class="qr-container">
+                <div class="qr-frame">
+                    <div class="qrcode"></div>
+                    <div class="scan-line"></div>
+                    <div class="corner-frame"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Input Section -->
+        <div class="input-section">
+            <div class="input-container">
+                <i class="fas fa-link"></i>
+                <input type="text" placeholder="Enter your URL or text here...">
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="button-container">
+                <button class="generate-btn" onclick="generateQr()">
+                    <span class="btn-content">
+                        <i class="fas fa-magic"></i>
+                        Generate QR
+                    </span>
+                </button>
+                <button class="download-btn" onclick="downloadQR()">
+                    <span class="btn-content">
+                        <i class="fas fa-download"></i>
+                        Download
+                    </span>
+                </button>
+
+                <!-- <footer class="footer">
+                    <a href="https://anubhav-webpage.netlify.app/" target="_blank" class="footer-link">
+                        Created with <i class="fas fa-heart"></i> by Anubhav
+                    </a>
+                </footer> -->
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span class="toast-message"></span>
+    </div>
+
+
+    <footer class="footer">
+        <a href="https://anubhav-webpage.netlify.app/" target="_blank" class="footer-link">
+            Created with <i class="fas fa-heart"></i> by Anubhav
         </a>
-    </main>
-  <script src="script.js"></script>
+    </footer>
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>
